@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+.planet {
+    position: relative;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    background: silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.moon {
+    margin-left: 50px;
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 50%;
+    background: darkblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.planet .circle {
+    position: absolute;
+    border: 2px solid orange;
+    border-radius: 50%;
+}
+.moon.selected {
+    background: orange;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.star-system {
+    max-width: 1000px;
+    padding: 60px 0;
+    margin: auto;
+}
+.planet-system {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.moons {
+    display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.orange {
+    color: orange;
 }
